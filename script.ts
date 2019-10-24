@@ -8,7 +8,7 @@ function palindrome(){
   //Put substrings back together
   let joinInput: string = reverseInput.join("");
 
-  if (input == joinInput){
+  if (input === joinInput){
     alert('This is a palidrome!');
   }else{
     alert('This is not a palindrome!');

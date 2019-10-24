@@ -7,11 +7,10 @@ function palindrome() {
     var reverseInput = splitInput.reverse();
     //Put substrings back together
     var joinInput = reverseInput.join("");
-    if (input == joinInput) {
+    if (input === joinInput) {
         alert('This is a palidrome!');
     }
     else {
         alert('This is not a palindrome!');
     }
-    // alert(joinInput);
 }
