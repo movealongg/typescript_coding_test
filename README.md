@@ -19,3 +19,5 @@ https://www.java67.com/2013/07/difference-between-equality-strict-vs-operator-in
 http://david-barreto.com/introduction-to-the-typescript-transpiler/
 
 https://uigradients.com/#MoonlitAsteroid
+
+https://www.typescriptlang.org/docs/home.html
