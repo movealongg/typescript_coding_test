@@ -8,10 +8,12 @@ function palindrome(){
   //Put substrings back together
   let joinInput: string = reverseInput.join("");
 
-  if (input === joinInput){
-    alert('This is a palidrome!');
+  if (input === ""){
+      document.getElementById("results").innerHTML = "Please enter some characters to check.";
+  }else if (input === joinInput){
+    document.getElementById("results").innerHTML = "Yay! This is a palindrome!";
   }else{
-    alert('This is not a palindrome!');
+    document.getElementById("results").innerHTML = "Boo! This is not a palindrome!";
   }
 
 }

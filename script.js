@@ -1,16 +1,19 @@
 function palindrome() {
     //Store element from #user-input in input variable
-    let input = document.getElementById("user-input").value;
+    var input = document.getElementById("user-input").value;
     //Split input string into substrings using split method
-    let splitInput = input.split("");
+    var splitInput = input.split("");
     //Reverse substrings using reverse method
-    let reverseInput = splitInput.reverse();
+    var reverseInput = splitInput.reverse();
     //Put substrings back together
-    let joinInput = reverseInput.join("");
-    if (input === joinInput) {
-        alert('This is a palidrome!');
+    var joinInput = reverseInput.join("");
+    if (input === "") {
+        document.getElementById("results").innerHTML = "Please enter some characters to check.";
+    }
+    else if (input === joinInput) {
+        document.getElementById("results").innerHTML = "Yay! This is a palindrome!";
     }
     else {
-        alert('This is not a palindrome!');
+        document.getElementById("results").innerHTML = "Boo! This is not a palindrome!";
     }
 }
