@@ -1,12 +1,12 @@
 function palindrome() {
     //Store element from #user-input in input variable
-    var input = document.getElementById("user-input").value;
+    let input = document.getElementById("user-input").value;
     //Split input string into substrings using split method
-    var splitInput = input.split("");
+    let splitInput = input.split("");
     //Reverse substrings using reverse method
-    var reverseInput = splitInput.reverse();
+    let reverseInput = splitInput.reverse();
     //Put substrings back together
-    var joinInput = reverseInput.join("");
+    let joinInput = reverseInput.join("");
     if (input === joinInput) {
         alert('This is a palidrome!');
     }
